@@ -1,3 +1,19 @@
-## Hi there 👋
+# 👋 Hello! I'm Cauã de Martin
 
-[![Visite meu LinkedIn](https://github.com/seu_usuario/seu_repositorio/blob/main/imagens/linkedin-button.png?raw=true)](https://www.linkedin.com/in/cau%C3%A3-de-martin)
+## About Me
+
+I'm a 19-year-old developer skilled in:
+- **Java**
+- **Clean Code**
+- **Object-Oriented Programming (OOP)**
+- **Analytical Thinking**
+- **Mathematics**
+- **Git**
+
+Currently, I work as a Software Engineer at **Sim Café**, focusing on web security and software engineering.
+
+
+## Connect with Me! 👇
+
+[🔗 Visit my LinkedIn](https://www.linkedin.com/in/cau%C3%A3-de-martin)
+
