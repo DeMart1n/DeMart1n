@@ -1,5 +1,7 @@
 # 👋 Hello! I'm Cauã de Martin
 
+![Hacker Noon GIF](https://media.giphy.com/media/dxn6fRlTIShoeBr69N/giphy.gif)
+
 ## About Me
 
 I'm a 19-year-old developer skilled in:
@@ -12,8 +14,6 @@ I'm a 19-year-old developer skilled in:
 
 Currently, I work as a Software Engineer at **Sim Café**, focusing on web security and software engineering.
 
-
 ## Connect with Me! 👇
 
 [🔗 Visit my LinkedIn](https://www.linkedin.com/in/cau%C3%A3-de-martin)
-
