@@ -1,6 +1,7 @@
 # 👋 Hello! I'm Cauã de Martin
 
 ![Hacker Noon GIF](https://media.giphy.com/media/dxn6fRlTIShoeBr69N/giphy.gif)
+![Tenor GIF](https://tenor.com/bV6Hi.gif)
 
 ## About Me
 
