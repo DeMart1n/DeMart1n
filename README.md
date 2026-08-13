@@ -102,14 +102,9 @@ Terminal pet in Go. Small enough to read in one sitting, complete enough to actu
 
 ---
 
-## Stats
+## Activity
 
 <div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=DeMart1n&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2EAD33&icon_color=2EAD33&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="GitHub stats">
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DeMart1n&layout=compact&hide_border=true&bg_color=0D1117&title_color=2EAD33&text_color=c9d1d9&langs_count=8" alt="Top languages">
-
-<br><br>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DeMart1n&bg_color=0D1117&color=c9d1d9&line=2EAD33&point=ffffff&area=true&hide_border=true" width="100%" alt="Contribution graph">
 
