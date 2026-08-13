@@ -30,22 +30,22 @@ I build production systems where the input is untrusted, the data can't leak, an
 <tr>
 <td width="50%" valign="top">
 
-### Cargo Tracking Platform
-`private` · Django · PostgreSQL · AWS
+### Cargo Tracking
+`closed source` · Django · PostgreSQL · AWS
 
-Multi-tenant platform for coffee export logistics. Multi-step wizards with dozens of inline formsets, per-company isolation enforced across models, views and forms, and resilient scraping pipelines replacing spreadsheets.
+Multi-tenant platform for coffee export logistics. Backend engineer on the team.
 
-`multi-tenancy` `formtools` `pg_trgm` `ecs`
+`multi-tenancy` `django` `aws`
 
 </td>
 <td width="50%" valign="top">
 
-### Motion Analysis Backend
-`private` · DRF · Celery · YOLO Pose
+### [Copy Coach](https://site.copy-coach.com/)
+`closed source` · DRF · Celery · Computer Vision
 
-Student records a set on their phone, on-device YOLO Pose extracts keypoints, the server scores execution against a reference template. ~170 routes, JWT/Argon2, Celery + Redis, Stripe Connect.
+Exercise execution analysis from video. I work on the backend and the signal pipeline.
 
-`dtw` `savitzky-golay` `signal-processing` `stripe`
+`drf` `celery` `pose-estimation`
 
 </td>
 </tr>
@@ -80,22 +80,22 @@ Terminal pet in Go. Small enough to read in one sitting, complete enough to actu
 <table>
 <tr><td>
 
-🔒 **Data isolation as an architectural decision** — multi-tenancy through custom managers and form mixins, applied consistently across models, views and forms. On the other project, every media consent path routes through a single gate with a per-upload audit snapshot. Three paths with three rules is how a leak happens.
+🔒 **Data isolation as an architectural decision** — multi-tenancy through custom managers and form mixins, applied consistently across models, views and forms. Media consent routed through a single gate instead of one rule per path. Three paths with three rules is how a leak happens.
 
 </td></tr>
 <tr><td>
 
-📈 **Algorithms, not just CRUD** — repetition segmentation with Savitzky-Golay and bidirectional peak/valley detection, DTW over angular features instead of raw coordinates, detector parameters calibrated by per-template grid search. Production logged 6 reps for a video with 16; I hand-labeled 14 videos, found the cause, and dropped mean error from **5.1 to 1.3** reps.
+📈 **Algorithms, not just CRUD** — repetition segmentation with Savitzky-Golay and bidirectional peak/valley detection, DTW over angular features instead of raw coordinates, detector parameters calibrated by grid search. The fix that mattered came from hand-labeling the data, not from reading the code.
 
 </td></tr>
 <tr><td>
 
-🔎 **Debugging to root cause, with measurement** — staging eating the production queue because it shared Redis DB 0. A flaky N+1 test counting the profiler's own queries. A Celery container in silent crash-loop (exit 137, no traceback) because boot imported Ultralytics. None of it shows up in a stack trace.
+🔎 **Debugging to root cause, with measurement** — shared queue namespaces bleeding between environments, flaky tests measuring their own instrumentation, containers in silent crash-loop with no traceback. None of it shows up in a stack trace.
 
 </td></tr>
 <tr><td>
 
-🧪 **Tests that exercise the real system** — ~240 files with pytest and factory-boy, including a suite against real Postgres for when SQLite lies about database behavior. Ran the payment flow end to end with a live test key and caught three defects the gateway mock was hiding.
+🧪 **Tests that exercise the real system** — pytest and factory-boy, including suites against real Postgres for when SQLite lies about database behavior. Payment flows run end to end against the gateway's test mode, because mocks hide the defects that matter.
 
 </td></tr>
 </table>
